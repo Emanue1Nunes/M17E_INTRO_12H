@@ -11,8 +11,12 @@ namespace M17E_INTRO_12H
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            tb_x.Text = "0";
-            tb_y.Text = "0";
+            if(!IsPostBack)
+            {
+                // Só para a primeira carga da página
+                tb_x.Text = "0";
+                tb_y.Text = "0";
+            }
         }
 
         protected void bt_soma_Click(object sender, EventArgs e)
