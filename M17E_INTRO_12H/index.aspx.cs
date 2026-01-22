@@ -17,15 +17,31 @@ namespace M17E_INTRO_12H
                 tb_x.Text = "0";
                 tb_y.Text = "0";
             }
+            if(Request.QueryString["resultado"] != null)
+            {
+                if(Request.QueryString["resultado"] == "erro")
+                {
+                    Response.Write("<script>alert('O parametro não existe!');</script>");
+                }
+            }
         }
 
         protected void bt_soma_Click(object sender, EventArgs e)
         {
-            int x, y;
-            x = int.Parse(tb_x.Text);
-            y = int.Parse(tb_y.Text);
+            int resultado = Soma(int.Parse(tb_x.Text),int.Parse(tb_y.Text));
+            lb_resultado.Text = "Resultado: " + resultado.ToString();
+        }
 
-            lb_resultado.Text = (x + y).ToString();
+        protected void bt_redirect_Click(object sender, EventArgs e)
+        {
+            int resultado = Soma(int.Parse(tb_x.Text), int.Parse(tb_y.Text));
+            string url = "resultado.aspx?resultado=" + resultado.ToString();
+            Response.Redirect(url);
+        }
+
+        int Soma(int x, int y)
+        {
+            return x + y;
         }
     }
 }

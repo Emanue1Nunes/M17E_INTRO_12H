@@ -18,6 +18,8 @@
             <asp:Button ID="bt_soma" runat="server" Text="Somar" OnClick="bt_soma_Click" />
             <br />
             <asp:Label ID="lb_resultado" runat="server"></asp:Label>
+            <br />
+            <asp:Button ID="bt_redirect" Text="Página resultado" runat="server" OnClick="bt_redirect_Click" />
         </div>
     </form>
     <div>
