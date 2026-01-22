@@ -11,18 +11,16 @@ namespace M17E_INTRO_12H
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            // verificar se existe o parâmetro erro na url
+            if(Request.QueryString["erro"] != null)
+            {
+                Response.Write("<script>alert('Ocorreu um erro!');</script>");
+            }
+            if (!IsPostBack)
             {
                 // Só para a primeira carga da página
                 tb_x.Text = "0";
                 tb_y.Text = "0";
-            }
-            if(Request.QueryString["resultado"] != null)
-            {
-                if(Request.QueryString["resultado"] == "erro")
-                {
-                    Response.Write("<script>alert('O parametro não existe!');</script>");
-                }
             }
         }
 
@@ -42,6 +40,18 @@ namespace M17E_INTRO_12H
         int Soma(int x, int y)
         {
             return x + y;
+        }
+
+        protected void bt_cookie_Click(object sender, EventArgs e)
+        {
+            //Criar um cookie
+            HttpCookie novo = new HttpCookie("12_H");
+            //definir o prazo de validade
+            novo.Expires = DateTime.Now.AddDays(30);
+            //definir o valor
+            novo.Value = "Teste";
+            //enviar para o browser
+            Response.Cookies.Add(novo);
         }
     }
 }

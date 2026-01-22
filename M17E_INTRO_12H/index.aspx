@@ -20,7 +20,10 @@
             <asp:Label ID="lb_resultado" runat="server"></asp:Label>
             <br />
             <asp:Button ID="bt_redirect" Text="Página resultado" runat="server" OnClick="bt_redirect_Click" />
+            <br />
+            <asp:Button ID="bt_cookie" runat="server" Text="Criar cookie" OnClick="bt_cookie_Click" />
         </div>
+        
     </form>
     <div>
         <h1>12ºH</h1>

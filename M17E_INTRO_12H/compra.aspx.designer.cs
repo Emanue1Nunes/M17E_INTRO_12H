@@ -11,7 +11,7 @@ namespace M17E_INTRO_12H
 {
 
 
-    public partial class index
+    public partial class compra
     {
 
         /// <summary>
@@ -24,75 +24,57 @@ namespace M17E_INTRO_12H
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label1 control.
+        /// lb_nome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lb_nome;
 
         /// <summary>
-        /// tb_x control.
+        /// lb_data_nascimento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_x;
+        protected global::System.Web.UI.WebControls.Label lb_data_nascimento;
 
         /// <summary>
-        /// Label2 control.
+        /// lb_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lb_email;
 
         /// <summary>
-        /// tb_y control.
+        /// lb_marca control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_y;
+        protected global::System.Web.UI.WebControls.Label lb_marca;
 
         /// <summary>
-        /// bt_soma control.
+        /// lb_modelo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_soma;
+        protected global::System.Web.UI.WebControls.Label lb_modelo;
 
         /// <summary>
-        /// lb_resultado control.
+        /// lb_processador control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_resultado;
-
-        /// <summary>
-        /// bt_redirect control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_redirect;
-
-        /// <summary>
-        /// bt_cookie control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_cookie;
+        protected global::System.Web.UI.WebControls.Label lb_processador;
     }
 }

@@ -24,13 +24,17 @@ namespace M17E_INTRO_12H
                 }
                 else
                 {
-                    Response.Write("<script>alert('Ocorreu um erro!');</script>");
+                    //Response.Write("<script>alert('Ocorreu um erro!');</script>");
+                    //redirecionar para a página index.aspx
+                    //mostrar uma mensagem de erro na index.aspx
+                    string url = "index.aspx?erro=1";
+                    Response.Redirect(url);
                 }
             }
             else
             {
                 //Response.Write("<script>alert('Não existe o parâmetro resultado!');</script>");
-                string url = "index.aspx?resultado=erro";
+                string url = "index.aspx?erro=1";
                 Response.Redirect(url);
                 //TODO: Cookies
             }
