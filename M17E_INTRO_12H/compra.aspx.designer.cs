@@ -33,6 +33,15 @@ namespace M17E_INTRO_12H
         protected global::System.Web.UI.WebControls.Label lb_nome;
 
         /// <summary>
+        /// tb_nome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_nome;
+
+        /// <summary>
         /// lb_data_nascimento control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace M17E_INTRO_12H
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_data_nascimento;
+
+        /// <summary>
+        /// tb_data_nascimento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_data_nascimento;
 
         /// <summary>
         /// lb_email control.
@@ -51,6 +69,15 @@ namespace M17E_INTRO_12H
         protected global::System.Web.UI.WebControls.Label lb_email;
 
         /// <summary>
+        /// tb_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_email;
+
+        /// <summary>
         /// lb_marca control.
         /// </summary>
         /// <remarks>
@@ -58,6 +85,15 @@ namespace M17E_INTRO_12H
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_marca;
+
+        /// <summary>
+        /// dd_marca control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dd_marca;
 
         /// <summary>
         /// lb_modelo control.
@@ -69,6 +105,15 @@ namespace M17E_INTRO_12H
         protected global::System.Web.UI.WebControls.Label lb_modelo;
 
         /// <summary>
+        /// dd_modelo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dd_modelo;
+
+        /// <summary>
         /// lb_processador control.
         /// </summary>
         /// <remarks>
@@ -76,5 +121,77 @@ namespace M17E_INTRO_12H
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_processador;
+
+        /// <summary>
+        /// rb_intel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rb_intel;
+
+        /// <summary>
+        /// rb_amd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rb_amd;
+
+        /// <summary>
+        /// rb_outro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rb_outro;
+
+        /// <summary>
+        /// cb_aceitar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cb_aceitar;
+
+        /// <summary>
+        /// lb_foto_perfil control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_foto_perfil;
+
+        /// <summary>
+        /// fu_foto_perfil control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_foto_perfil;
+
+        /// <summary>
+        /// bt_comprar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bt_comprar;
+
+        /// <summary>
+        /// lb_erro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_erro;
     }
 }
