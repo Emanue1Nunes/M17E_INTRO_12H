@@ -13,5 +13,17 @@ namespace M17E_INTRO_12H
         {
 
         }
+
+        protected void bt_login_Click(object sender, EventArgs e)
+        {
+            // validar 
+            if (tb_email.Text == "" || tb_password.Text == "")
+            {
+                lb_erro.Text = "Login falhou. Tente novamente";
+            }
+            // consulta à tabela de utilizadores
+
+            // Sessão - perfil, email, nome
+        }
     }
 }

@@ -7,7 +7,7 @@ Email: <asp:textbox ID="tb_email" runat="server" CssClass="texto_vermelho" type=
     <br />
 Palavra-passe: <asp:textbox ID="tb_password" runat="server" type="passwprd"></asp:textbox>
     <br />
-    <asp:Button ID="bt_login" runat="server" Text="Login" />
+    <asp:Button ID="bt_login" runat="server" Text="Login" OnClick="bt_login_Click" />
     <br />
     <asp:Label ID="lb_erro" runat="server" CssClass="texto_vermelho"></asp:Label>
 </asp:Content>
