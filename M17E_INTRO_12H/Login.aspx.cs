@@ -1,4 +1,5 @@
-﻿using System;
+﻿using M17E_INTRO_12H.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,10 +21,33 @@ namespace M17E_INTRO_12H
             if (tb_email.Text == "" || tb_password.Text == "")
             {
                 lb_erro.Text = "Login falhou. Tente novamente";
+                return;
             }
             // consulta à tabela de utilizadores
-
+            Utilizadores novo = new Utilizadores();
+            novo.email = tb_email.Text;
+            novo.palavra_passe = tb_password.Text;
+            if (!novo.Verifica_login())
+            {
+                lb_erro.Text = "Login falhou. Tente novamente";
+                return;
+            }
             // Sessão - perfil, email, nome
+            Session["id"] = novo.id;
+            Session["perfil"] = novo.perfil;
+            Session["email"] = novo.email;
+            Session["nome"] = novo.nome;
+            Session["ip"] = Request.UserHostAddress;
+            Session["useragent"] = Request.UserAgent;
+            // redirecionar o utilizador de acordo com perfil
+            if (novo.perfil == 0)
+            {
+                Response.Redirect("admin.aspx");
+            }
+            if (novo.perfil == 1)
+            {
+                Response.Redirect("cliente.aspx");
+            }
         }
     }
 }

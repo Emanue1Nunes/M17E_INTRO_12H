@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="cliente.aspx" />
     <Content Include="compra.aspx" />
     <Content Include="cookies.aspx" />
     <Content Include="index.aspx" />
@@ -77,8 +79,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Classes\BaseDados.cs" />
     <Compile Include="Classes\Utilizadores.cs" />
+    <Compile Include="cliente.aspx.cs">
+      <DependentUpon>cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cliente.aspx.designer.cs">
+      <DependentUpon>cliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="compra.aspx.cs">
       <DependentUpon>compra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
