@@ -5,7 +5,7 @@
     <h1>Login</h1>
 Email: <asp:textbox ID="tb_email" runat="server" CssClass="texto_vermelho" type="email"></asp:textbox>
     <br />
-Palavra-passe: <asp:textbox ID="tb_password" runat="server" type="passwprd"></asp:textbox>
+Palavra-passe: <asp:textbox ID="tb_password" runat="server" type="password"></asp:textbox>
     <br />
     <asp:Button ID="bt_login" runat="server" Text="Login" />
     <br />
